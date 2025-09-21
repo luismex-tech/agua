@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gota Clara - Agua Purificada a tu Puerta</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💧</text></svg>">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-container">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0L12 2.69z"></path></svg>
+                <h1>Gota Clara</h1>
+            </div>
+            <h2>Pureza y tecnología en cada gota.</h2>
+            <p>Calcula tu consumo ideal y haz tu pedido por WhatsApp en segundos. Rápido, fácil e inteligente.</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="asistente" class="card">
+            <h3><span class="highlight">Asistente</span> de Hidratación</h3>
+            <p class="subtitle">Dinos cuántas personas son en casa y te prepararemos un pedido sugerido.</p>
+            <div class="calculator">
+                <div class="input-group">
+                    <label for="personas">Número de personas:</label>
+                    <div class="stepper">
+                        <button id="personas-minus" aria-label="Disminuir número de personas">-</button>
+                        <input type="number" id="personas" value="2" min="1" max="20" readonly>
+                        <button id="personas-plus" aria-label="Aumentar número de personas">+</button>
+                    </div>
+                </div>
+            </div>
+            <div id="resultado" class="resultado-card">
+                <h4>Tu Pedido Semanal Ideal:</h4>
+                <p id="texto-resultado">Calculando...</p>
+            </div>
+            <a id="pedir-whatsapp" href="#" class="cta-button" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                Pedir por WhatsApp
+            </a>
+        </section>
+
+        <section class="info-section">
+            <h2>Calidad que puedes ver</h2>
+            <div class="gallery">
+              <img src="https://images.milenio.com/LY0gcYdcrM7Fk-hYqDZag-_mag8=/942x532/uploads/media/2023/07/18/recomendacion-cambiar-habitual-envases-garrafones.jpg" alt="Garrafón de agua purificada en un hogar moderno">
+              <img src="https://cdn.aarp.net/content/dam/aarpe/es/home/salud/vida-saludable/info-2018/tomar-agua-para-bajar-de-peso-diane-perez/_jcr_content/root/container_main/container_body_main/container_body1/container_body_cf/container_image/articlecontentfragment/cfimage.coreimg.50.932.jpeg/content/dam/aarp/health/healthy-living/2018/07/1140--drink-water-lose-weight-esp.jpg" alt="Persona sirviéndose un vaso de agua fresca">
+              <img src="https://images.milenio.com/2zropNXfRxW7tj8lNz6p7NTa4lY=/942x532/uploads/media/2021/09/21/planta-purificadora-de-agua-especial_0_53_1199_747.jpg" alt="Planta de purificación de agua">
+          </div>
+        </section>
+
+        <section class="info-section card-light">
+            <h2>¿Por qué elegir Gota Clara?</h2>
+            <div class="features">
+                <div class="feature-item">
+                    <div class="feature-icon">💧</div>
+                    <h3>Máxima Pureza</h3>
+                    <p>Utilizamos un proceso de ósmosis inversa de 7 etapas para garantizar agua de la más alta calidad.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✅</div>
+                    <h3>Certificación Oficial</h3>
+                    <p>Cumplimos con todas las normativas de salubridad para tu total tranquilidad y confianza.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Entrega Confiable</h3>
+                    <p>Llegamos a tu domicilio puntualmente. Consulta nuestra zona de cobertura inteligente.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <h2>Nuestra Ubicación y Cobertura</h2>
+            <p class="subtitle">Visítanos en nuestra planta o verifica si entregamos en tu colonia.</p>
+            <div class="location-container">
+                <div class="map-container">
+                    <<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.395571970911!2d-101.71444002606258!3d21.136650384066705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842bbf61b2f3bc7f%3A0xc6d7512f2675aedd!2sZaragoza%2C%20Le%C3%B3n%20de%20los%20Aldama%2C%20Gto.!5e0!3m2!1ses!2smx!4v1758419543753!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> src="http://googleusercontent.com/maps/google.com/5" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="coverage-checker">
+                    <h4>Verificador de Cobertura Inteligente</h4>
+                    <input type="text" id="colonia-input" placeholder="Escribe tu colonia...">
+                    <button id="verificar-btn">Verificar</button>
+                    <p id="resultado-cobertura"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Gota Clara - Todos los derechos reservados.</p>
+    </footer>
+
+    <a id="floating-whatsapp-btn" href="#" class="floating-btn" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
