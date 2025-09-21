@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     // --- CONFIGURACIÓN DEL NEGOCIO ---
-    const numeroWhatsApp = '5214771234567'; // Formato: [CodigoPais][CodigoArea][Numero]
+    const numeroWhatsApp = '5214776772422'; // Formato: [CodigoPais][CodigoArea][Numero]
 
     // --- LISTA DE COLONIAS CON COBERTURA ---
     const coloniasConCobertura = [
@@ -116,3 +116,4 @@ document.addEventListener('DOMContentLoaded', () => {
         calcularPedidoSugerido();
     }
 });
+
