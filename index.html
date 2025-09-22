@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gota Clara - Agua Purificada a Domicilio</title>
+    <meta name="description" content="Pide garrafones de agua purificada de 20 litros con la máxima calidad. Entrega rápida y confiable en tu zona.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-background"></div>
+        <nav>
+            <div class="logo">Gota Clara</div>
+        </nav>
+        <div class="hero-content">
+            <h1 class="hero-title">La Pureza que Mereces.</h1>
+            <h2 class="hero-subtitle">Directo a tu puerta.</h2>
+            <p>Agua purificada en garrafones de 20L. Calidad premium, servicio local.</p>
+
+            <div class="order-box">
+                <h3>¿Cuántos garrafones necesitas hoy?</h3>
+                <div class="counter">
+                    <button id="decrease" class="counter-btn">—</button>
+                    <span id="quantity" class="counter-value">1</span>
+                    <button id="increase" class="counter-btn">+</button>
+                </div>
+                <button id="openModalBtn" class="cta-button">HACER PEDIDO AHORA</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="purity" class="purity-section">
+            <h2 class="section-title">Calidad en Cada Gota</h2>
+            <div class="purity-grid">
+                <div class="purity-card">
+                    <div class="purity-icon">💧</div>
+                    <h3>Máxima Pureza</h3>
+                    <p>Nuestra planta garantiza un agua libre de sedimentos, con un sabor neutro y refrescante.</p>
+                </div>
+                <div class="purity-card">
+                    <div class="purity-icon">🛡️</div>
+                    <h3>Libre de Cloro y Metales</h3>
+                    <p>Eliminamos el 100% de cloro y metales pesados. Solo obtienes H₂O en su mejor estado.</p>
+                </div>
+                <div class="purity-card">
+                    <div class="purity-icon">🌿</div>
+                    <h3>Filtración Avanzada</h3>
+                    <p>Proceso de 8 etapas, incluyendo luz UV y ozono, para eliminar cualquier bacteria o virus.</p>
+                </div>
+                <div class="purity-card">
+                    <div class="purity-icon">❤️</div>
+                    <h3>Agua Saludable y Ligera</h3>
+                    <p>El balance perfecto de minerales para cuidar la salud de toda tu familia.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-it-works-section">
+            <h2 class="section-title">Tan Fácil como Contar hasta 3</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Pide</h3>
+                    <p>Elige cuántos garrafones y completa tus datos en menos de un minuto.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Confirma y Recibe</h3>
+                    <p>Te contactamos por WhatsApp y nuestro repartidor llegará a tu puerta.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Disfruta</h3>
+                    <p>Hidrátate con la mejor calidad de agua, sin complicaciones.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="coverage" class="coverage-section">
+             <h2 class="section-title">¿Llegamos a tu Hogar?</h2>
+             <div class="coverage-content">
+                <div class="coverage-info">
+                    <h3>Nuestra Zona de Reparto</h3>
+                    <ul>
+                        <li>Colonia Centro</li>
+                        <li>Residencial El Bosque</li>
+                        <li>Jardines del Moral</li>
+                        <li>Valle del Campestre</li>
+                        <li>Y zonas aledañas (consulta por WhatsApp)</li>
+                    </ul>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118943.10702213138!2d-101.7374465972656!3d21.15093749999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842bcf06141c9f63%3A0xcd18420c25c34515!2zTGVhbsQsIEd0by4!5e0!3m2!1ses-419!2smx!4v1727024220790!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+             </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="logo">Gota Clara</div>
+        <p>© 2025 Gota Clara - Todos los derechos reservados.</p>
+        <p>Servicio y calidad en cada entrega.</p>
+    </footer>
+
+    <div id="orderModal" class="modal-overlay">
+        <div class="modal-content">
+            <button id="closeModalBtn" class="close-button">×</button>
+            <h2>Casi Listo. Confirma tu Pedido.</h2>
+            <p id="modalSummary">Estás pidiendo: <strong>1 garrafón</strong> de Agua Gota Clara.</p>
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="name">Nombre de quien ordena:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Teléfono de Contacto (10 dígitos):</label>
+                    <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" title="Ingresa 10 dígitos sin espacios ni guiones">
+                </div>
+                <div class="form-group">
+                    <label for="address">Dirección de Entrega:</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Comentarios Adicionales:</label>
+                    <textarea id="comments" name="comments" rows="2" placeholder="Ej: Dejar en recepción, casa azul..."></textarea>
+                </div>
+                <button type="submit" class="cta-button">✓ ENVIAR PEDIDO POR WHATSAPP</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
