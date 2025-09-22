@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const encodedMessage = encodeURIComponent(message);
 
         // Crear la URL de WhatsApp
-        const whatsappURL = `https://wa.me/${GOTA_CLARA_PHONE_NUMBER}?text=${encodedMessage}`;
+        const whatsappURL = `https://wa.me/5214776772422?text=${encodedMessage}`;
 
         // Abrir WhatsApp en una nueva pestaña
         window.open(whatsappURL, '_blank');
